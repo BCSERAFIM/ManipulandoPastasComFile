@@ -29,7 +29,10 @@ public class Program {
 			System.out.println(file);
 		}
 		
+		// Criar sub pasta
 		
+		boolean success = new File(strPath + "\\subdir").mkdir();
+		System.out.println("Directory created successfully: " + success);
 		
 		
 		sc.close();
