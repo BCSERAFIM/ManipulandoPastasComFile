@@ -13,12 +13,21 @@ public class Program {
 		
 		File path = new File(strPath);
 		
+		//Listar as sub pastas
+		
 		File [] folders = path.listFiles(File::isDirectory);
 		System.out.println("Folders");
 		for (File folder : folders) {
 			System.out.println(folder);
 		}
 		
+		// Listar os Arquivos
+		
+		File[] files = path.listFiles(File::isFile);
+		System.out.println("Files:");
+		for (File file : files) {
+			System.out.println(file);
+		}
 		
 		
 		
